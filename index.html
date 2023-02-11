@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+    <meta charset = "UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Наш блог</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
+    <meta http-equiv="Content-Type">
+</head>
+<header>
+
+    <div class = "header" id="menu"> <!-- Меню -->
+        <div class = "headerSection">
+            <div class = "headerItem headerLogo"></div>
+            <div class = "headerItem headerButton">
+                <a href = "#"></a>
+            </div>
+
+        </div>
+    </div>
+</header>
+<body>
+<section class="gallery">
+    <h2 class="title">Как прошли эти полгода:</h2>
+    <div class="gallery-list">
+        <a href="gallery/1.jpg" class="gallery-item">
+            <div class="gallery-item-hover">Поход в кино<br>10.09.22</div>
+            <img src="gallery/1.jpg" alt="alt">
+        </a>
+        <a href="gallery/2.jpg" class="gallery-item">
+            <div class="gallery-item-hover">Сон перед военкой<br>23.11.22</div>
+            <img src="gallery/2.jpg" alt="alt">
+        </a>
+        <a href="gallery/3.jpg" class="gallery-item">
+            <div class="gallery-item-hover">Вкусная еда<br>07.12.22</div>
+            <img src="gallery/3.jpg" alt="alt">
+        </a>
+        <a href="gallery/4.jpg" class="gallery-item">
+            <div class="gallery-item-hover">Новая рубашка<br>26.09.22</div>
+            <img src="gallery/4.jpg" alt="alt">
+        </a>
+        <a href="gallery/5.jpg" class="gallery-item">
+            <div class="gallery-item-hover">Прогулка в красивую дату<br>12.12.22</div>
+            <img src="gallery/5.jpg" alt="alt">
+        </a>
+        <a href="gallery/6.jpg" class="gallery-item">
+            <div class="gallery-item-hover">Долгая дорога<br>04.11.22</div>
+            <img src="gallery/6.jpg" alt="alt">
+        </a>
+        <a href="gallery/7.jpg" class="gallery-item">
+            <div class="gallery-item-hover">Хеллоуин<br>28.10.22</div>
+            <img src="gallery/7.jpg" alt="alt">
+        </a>
+        <a href="gallery/8.jpg" class="gallery-item">
+            <div class="gallery-item-hover">Осенний поход<br>12.10.22</div>
+            <img src="gallery/8.jpg" alt="alt">
+        </a>
+        <a href="gallery/9.jpg" class="gallery-item">
+            <div class="gallery-item-hover">Поездка в Казань<br>06.10.22</div>
+            <img src="gallery/9.jpg" alt="alt">
+        </a>
+        <a href="gallery/10.jpg" class="gallery-item">
+            <div class="gallery-item-hover">Котик на остановке<br>24.10.22</div>
+            <img src="gallery/10.jpg" alt="alt">
+        </a>
+        <a href="gallery/11.jpg" class="gallery-item">
+            <div class="gallery-item-hover">День рождения<br>26.09.22</div>
+            <img src="gallery/11.jpg" alt="alt">
+        </a>
+        <a href="gallery/12.jpg" class="gallery-item">
+
+            <div class="gallery-item-hover">Первый раз<br>31.08.22</div>
+            <img src="gallery/12.jpg" alt="alt">
+        </a>
+    </div>
+</section>
+<section class="video">
+    <h2 class="title">Видео о наших приключениях:</h2>
+    <video src="video.mp4" class = "videoClass" controls width="30%" ></video>
+</section>
+<footer>
+    <div class = "footer" > <!--футер -->
+        <div class = "footerSection">
+              Feel Good Inc.
+        </div>
+    </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+<script>
+    $(".gallery-list").magnificPopup({
+        delegate: "a",
+        type: "image",
+        gallery: {
+            enabled: true
+        }
+    });
+</script>
+</body>
+</html>
